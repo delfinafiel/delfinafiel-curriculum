@@ -1,2 +1,1 @@
 # delfinafiel-curriculum
-# curriculum
