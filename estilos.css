@@ -99,44 +99,48 @@ h1 {
 }
 
 h2 {
+    width: 80%;
+    height: fit-content;
     font-family: "migra";
     color: #f6f4f0;
-    text-align: justify;
-    margin-top: -50px;
-    margin-bottom: 50px;
-    margin-left:40px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 70px;
 }
 
 
 
 /* Atributos de 'presentacion'*/
-.presentacion {
+.presentacion article {
     width: 80%;
     background: linear-gradient(to right, #798a89, #cad8ce, #798a89);
     border-radius: 40px;
     margin: 30px;
     padding: 30px;
+    display: flex;
 }
 
-.presentacion h3 { /* titulares */
+.presentacion article div h3 { /* titulares */
+    height: fit-content;
     font-family: "migra";
     font-size: 30px;
     color: rgb(20, 20, 20);
+    align-items: left;
 }
 
-.presentacion h4 {
-    color: rgb(20, 20, 20);
-    font-size: medium;
-}
-
-.presentacion p {
+.presentacion article div p {
+    width: 300px;
+    height: 200px;
     color: rgb(20, 20, 20);
     font-size: small;
     margin-top: 12px;
+    align-items: left;
 }
 
-.presentacion img {
+.presentacion article div img {
     margin-top: 20px;
+    align-items: right;
+    height: 200px
 }
 
 
