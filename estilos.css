@@ -1,108 +1,309 @@
 @charset "utf-8";
 /* CSS document */
 
+@font-face {
+    font-family: "migra";
+    src: url(fonts/MigraItalic-ExtraboldItalic.otf);
+}
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
 }
 body {
-    background-color:rgb(252, 249, 244);
-    font-family: Tahoma;
+    font-family: "Fira Code", monospace;
+    background-color:#222222;
 }
 
-h3 {
-    font-size: 30px;
-}
 
 img {
     border-radius: 20px;
 }
 
+
 header {
-position: fixed;
-width: 90%;
-display: block;
+width: 100%;
+height: 120px;
 }
 
-main {
-    margin-top: 90px;
-    }
 
-nav {
-    width: 100%;
+
+/* Atributos del <nav> */
+.botonera {
+    width: 85%;
     height: 60px;
-    margin: 10px;
-    background-color: rgb(252, 249, 244);
-    border: 1px solid  rgb(20, 20, 20);
+    margin: 30px;
+    position: fixed;
+    background-color: #222222;
+    border: 1px solid   #cad8ce;
     border-radius: 50px;
-    box-shadow: 0 1px 15px rgba(183, 183, 183, 0.5);
 }
-ul {
-    display: flex;
-    flex-direction: row;
+
+nav ul {
     list-style: none;
-}
-li {
-    color:  rgb(20, 20, 20);
+    padding: 10px; /* Posicion de la linea de botones */
     display: flex;
-    background-color: rgb(252, 249, 244);
-    border: 1px solid  rgb(20, 20, 20);
-    border-radius: 50px;
-    margin: 10px;
-    padding: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
-li a {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+
+nav ul li {
     color:  rgb(20, 20, 20);
+    display: inline;
+    padding: 1%; /* Distancia entre botones */
+}
+
+
+/* Atributos de cada boton */
+.botonera a {
+    color: #f6f4f0;
     text-decoration: none;
+    background-color: #222222;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.botonera a:hover {
+    background-color: #cad8ce;
+    color:#222222
+}
+
+.botonera a:active {
+    background: rgb(20, 20, 20);
+    color:#f6f4f0
+}
+
+
+
+
+/* Atributos de 'portada' */
+.portada {
+    height: 360px;
+
 }
 
 h1 {
-    color: rgb(20, 20, 20);
+    font-family: "migra";
+    color: #f6f4f0;
     font-size: 200pt;
-    margin: 5px;
+    margin-top: 30px;
+    margin-left:40px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
 }
 
+h2 {
+    font-family: "migra";
+    color: #f6f4f0;
+    text-align: justify;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    margin-left:40px;
+}
+
+
+
+/* Atributos de 'presentacion'*/
 .presentacion {
-    color: #b7b7b7;
-    background-color: rgb(20, 20, 20);
+    width: 80%;
+    background: linear-gradient(to right, #798a89, #cad8ce, #798a89);
     border-radius: 40px;
-    margin: 50px;
-    padding: 20px;
+    margin: 30px;
+    padding: 30px;
 }
 
+.presentacion h3 { /* titulares */
+    font-family: "migra";
+    font-size: 30px;
+    color: rgb(20, 20, 20);
+}
+
+.presentacion h4 {
+    color: rgb(20, 20, 20);
+    font-size: medium;
+}
+
+.presentacion p {
+    color: rgb(20, 20, 20);
+    font-size: small;
+    margin-top: 12px;
+}
+
+.presentacion img {
+    margin-top: 20px;
+}
+
+
+
+
+/* Atributos generales de 'secciones'*/
+h3 { /* titulares de secciones */
+    font-family: "migra";
+    font-size: 30px;
+    color:  #cad8ce;
+}
+
+h4 {
+    color: #f6f4f0;
+    font-size: medium;
+}
+
+p {
+    color: #f6f4f0;
+    font-size: small;
+}
+
+
+
+
+/* Atributos de 'servicios'*/
 .servicios {
+    margin: 30px;
+    padding: 30px;
+    padding-top: 25px;
+    width: 80%;
+    border: 1px solid  #cad8ce;
     border-radius: 40px;
-    border: 1px solid  rgb(20, 20, 20);
-    margin: 50px;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.servicios h4 {
+    margin-top: 20px;
+}
+
+.servicios p {
+    margin-top: 3px;
+}
+
+
+
+
+/* Atributos de 'trabajos'*/
 .trabajos {
+    margin: 30px;
+    padding: 30px;
+    padding-top: 25px;
+    width: 80%;
+    border: 1px solid  #cad8ce;
     border-radius: 40px;
-    border: 1px solid  rgb(20, 20, 20);
-    margin: 50px;
-    padding: 20px;
 }
 .box {
-    margin: 20px;
+    padding: 2%;
+    width: 500px;
+    
 }
 
+.cards {
+    display: flex;
+}
+
+.trabajos h4 {
+    margin-top: 20px;
+}
+
+.trabajos p {
+    margin-top: 15px;
+}
+
+
+/* Atributos de 'contacto'*/
 .contacto {
+    margin: 30px;
+    padding: 30px;
+    padding-top: 25px;
+    width: 80%;
+    border: 1px solid  #cad8ce;
     border-radius: 40px;
-    border: 1px solid  rgb(20, 20, 20);
-    margin: 50px;
-    padding: 20px;
 }
+
+.contacto article {
+    margin-top: 20px;
+}
+
+
+
+/* Atributos de textito con email*/
+.contacto p {
+    margin-top: 20px;
+}
+
+.contacto h5 {
+    color: #f6f4f0;
+    font-size:small;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
+
+aside {
+    display: flex;
+
+}
+
+/* Atributos botones de redes*/
 .contacto li {
-    background-color:  rgb(20, 20, 20);
+    color:  rgb(20, 20, 20);
+    display: inline;
+    padding: 1%; /* Distancia entre botones */
 }
+
 .contacto a {
-    color: #ffffff;
+    color: #222222;
+    text-decoration: none;
+    background-color: #cad8ce;
+    border-radius: 50px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contacto a:hover {
+    background-color: #222222;
+    color:#cad8ce;
+    border: 1px solid  #cad8ce;
+}
+
+.contacto a:active {
+    background: rgb(20, 20, 20);
+    color:#f6f4f0;
 }
 
 
+
+/* Atributos de 'footer'*/
+aside {
+    background-color: #cad8ce;
+}
+
+
+
+
+/* Atributos de 'footer'*/
+footer {
+    margin: 30px;
+    align-content: center;
+}
+
+.frase p {
+    background: linear-gradient(to right, #798a89, #cad8ce, #798a89);
+    color:#222222;
+    padding: 20px;
+    border: 20px;
+    width: 90%;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.materia p {
+    margin: 20px;
+    text-align: center;
+}
