@@ -63,7 +63,7 @@ nav ul li {
     text-decoration: none;
     background-color: #222222;
     border-radius: 50px;
-    padding: 10px;
+    padding: 10px; /*Si ya aplicas acá un padding a todo, no es necesario que vuelvas a repetir padding-left y right abajo. En todo caso, aplicalo directamente a este atributo. Fijate que en más casos lo tenés así.*/
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -102,8 +102,8 @@ h2 {
     font-family: "migra";
     color: #f6f4f0;
     text-align: justify;
-    margin-top: -50px;
-    margin-bottom: 50px;
+    margin-top: -50px; /*En general no se suelen usar numeros negativos en margin o padding. Fijate si no podés solucionarlo de otra forma, como poniendo un height al elemento superior.*/
+    margin-bottom: 50px; /*Si tenés tantos margins, en vez de poner top, bottom y left, podés directamente usar la propiedad de margin. Chusmea como se usa.*/
     margin-left:40px;
 }
 
