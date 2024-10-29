@@ -1,11 +1,6 @@
 @charset "utf-8";
 /* CSS document */
 
-@font-face {
-    font-family: "migra";
-    src: url(fonts/MigraItalic-ExtraboldItalic.otf);
-}
-
 *{
     margin: 0px;
     padding: 0px;
