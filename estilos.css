@@ -14,9 +14,19 @@ body {
 
 
 img {
-    border-radius: 20px;
+    border-radius: 40px;
 }
 
+/*Caracteristicas generales de todos los botones*/
+.boton a {
+    width: fit-content;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #f6f4f0;
+    background-color: #798a89;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
 
 
 /* HEADER */
@@ -29,27 +39,33 @@ header {
 
 /* Atributos del <nav> */
 .botonera {
-    width: 60%;
+    width: 800px;
+    min-width: 600px;
     height: 60px;
     margin: 30px;
+    padding: 0px 12px;
     position: fixed;
     background-color: #222222;
     border: 1px solid   #cad8ce;
     border-radius: 50px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    gap: 100px;
 }
 
 nav ul {
     list-style: none;
-    padding: 10px; /* Posicion de la linea de botones */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 550px;
 }
 
 nav ul li {
     color:  rgb(20, 20, 20);
     display: inline;
-    
 }
 
 
@@ -57,12 +73,10 @@ nav ul li {
 .botonera a {
     color: #f6f4f0;
     text-decoration: none;
+    font-size: small;
     background-color: #222222;
     border-radius: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px 20px;
 }
 
 .botonera a:hover {
@@ -70,39 +84,33 @@ nav ul li {
     color:#222222
 }
 
-.botonera a:active {
-    background: rgb(20, 20, 20);
-    color:#f6f4f0
-}
 
-
-
-/* MAIN */
+/* INDEX/HOME */
 
 /* Atributos de 'portada' */
 .portada {
-    height: 420px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-
 }
 
 h1 {
-    font-family: "migra";
-    color: #f6f4f0;
+    font-family: "Piazzolla";
+    font-weight: 100;
+    font-style: italic;
     font-size: 200pt;
-    margin-top: 50px;
-    width: 80%;
-    height: 320px;
+    color: #f6f4f0;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
 
 h2 {
-    width: 80%;
-    height: 20px;
-    font-family: "migra";
+    font-family: "Piazzolla";
+    font-weight: 100;
+    font-style: italic;
+    font-size: 25pt;
     color: #f6f4f0;
     text-align: center;
 }
@@ -112,46 +120,46 @@ h2 {
 /* Atributos de 'presentacion'*/
 
 .presentacion {
-    height: 400px;
     display: flex;
     justify-content: center;
+    margin: 100px 0px;
     }
 
 .presentacion article {
-    width: 620px;
-    height: 360px;
-    background: linear-gradient(to right, #798a89, #cad8ce, #798a89);
-    border-radius: 40px;
-    padding: 40px;
-    margin-top: 100px;
-    margin-bottom: 20px;
     display: flex;
+    flex-direction: row;
+    width: 55%;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    gap: 20px;
 }
-
-.presentacion div {
-    width: fit-content;
+.sobre-mi {
     display: flex;
     flex-direction: column;
-}
-.presentacion h3 { /* titulares */
-    width:fit-content;
-    height: 50px;
-    font-family: "migra";
-    font-size: 30px;
-    color: rgb(20, 20, 20);
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    height: 300px;
+    background: radial-gradient(#cad8ce, #798a89);
+    border-radius: 40px;
+    max-width: 510%;
+    min-width: 400px;
 }
 
 .presentacion p {
-    width: 200px;
-    height: 200px;
-    color: rgb(20, 20, 20);
+    color: #f6f4f0;
     font-size: small;
-    margin-top: 12px;
+    text-align: center;
 }
 
-
+/*Boton de ''portfolio''*/
+.boton div {
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Atributos generales de 'secciones'*/
 h3 { /* titulares de secciones */
@@ -170,37 +178,6 @@ p {
     color: #f6f4f0;
     font-size: small;
 }
-
-
-
-
-/* Atributos de 'servicios'*/
-
-.servicios {
-    display: flex;
-    justify-content: center;
-}
-
-.servicios div {
-    margin: 30px;
-    padding: 30px;
-    padding-top: 25px;
-    width: 80%;
-    border: 1px solid  #cad8ce;
-    border-radius: 40px;
-    margin-top: 100px;
-    margin-bottom: 10px;
-}
-
-.servicios h4 {
-    margin-top: 20px;
-}
-
-.servicios p {
-    margin-top: 3px;
-}
-
-
 
 
 /* Atributos de 'portfolio' */
@@ -247,90 +224,76 @@ p {
 }
 
 
-
-/* Atributos de 'contacto'*/
-
-.contacto {
+/* FOOTER '*/
+footer {
+    height: 300px;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.contacto article {
-    padding: 30px;
-    padding-top: 25px;
-    width: 80%;
-    border: 1px solid  #cad8ce;
-    border-radius: 40px;
     margin-top: 100px;
-    margin-top: 20px;
 }
 
-
-.contacto h3 {
-    padding-bottom: 20px;
+footer div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Atributos de textito con email*/
-.contacto p {
-    margin-top: 20px;
+.contenedor-frase-redes {
+    max-width: 1000px;
+    min-width: 600px;
+    padding: 30px;
+    height: 200px;
+    background-color: #222222;
+    border: 1px solid #cad8ce;
+    border-radius: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
-.contacto h5 {
-    color: #f6f4f0;
-    font-size:small;
-    font-style: italic;
-    text-decoration: underline;
+.redes ul {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 15%;
 }
 
-
-
-
-/* Atributos botones de redes*/
-.contacto li {
+.redes li {
     color:  rgb(20, 20, 20);
-    display: inline;
-    padding: 1%; /* Distancia entre botones */
+    display: inline; /* Distancia entre botones */
 }
 
-.contacto a {
+.redes a {
     color: #222222;
     text-decoration: none;
     background-color: #cad8ce;
-    border-radius: 50px;
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
+    border-radius: 100px;
+    padding: 10px;
 }
 
-.contacto a:hover {
+.redes a:hover {
     background-color: #222222;
     color:#cad8ce;
-    border: 1px solid  #cad8ce;
+    border: 1px solid #cad8ce;
 }
 
-.contacto a:active {
+.redes a:active {
     background: rgb(20, 20, 20);
     color:#f6f4f0;
 }
 
-
-
-/* FOOTER '*/
-
-.frase {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 80px;
-}
-
 .frase p {
-    background: linear-gradient(to right, #798a89, #cad8ce, #798a89);
-    color:#222222;
-    padding: 20px;
-    border: 20px;
-    width: 400px;
+    font-family: Piazzolla;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 11pt;
+    max-width: 500px;
+    min-width: 100px;
+    background: #222222;
+    padding: 15px 30px;
+    border: 1px solid  #cad8ce;
     border-radius: 40px;
     text-align: center;
 }
@@ -338,4 +301,5 @@ p {
 .materia p {
     margin: 20px;
     text-align: center;
+    font-size: 10px;
 }
