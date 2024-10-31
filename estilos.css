@@ -17,6 +17,36 @@ img {
     border-radius: 40px;
 }
 
+h1 {
+    font-family: "Piazzolla";
+    font-weight: 100;
+    font-style: italic;
+    font-size: 200pt;
+    color: #f6f4f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h2{
+    color: #222222;
+    text-align: center;
+    font-family: "Piazzolla";
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 93.72%; /* 187.44px */
+}
+
+h3 {
+    font-family: "Piazzolla";
+    font-weight: 100;
+    font-style: italic;
+    font-size: 25pt;
+    color: #f6f4f0;
+    text-align: center;
+}
+
 /*Caracteristicas generales de todos los botones*/
 .boton a {
     width: fit-content;
@@ -84,6 +114,99 @@ nav ul li {
     color:#222222
 }
 
+h4 {
+    color: #f6f4f0;
+    font-size: medium;
+}
+
+p {
+    color: #f6f4f0;
+    font-size: small;
+}
+
+
+/* FOOTER '*/
+footer {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.contenedor-frase-redes {
+    width: 70%;
+    min-width: 600px;
+    padding: 30px;
+    height: 200px;
+    background-color: #222222;
+    border: 1px solid #cad8ce;
+    border-radius: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.redes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.redes ul {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+}
+
+.redes li {
+    color:  rgb(20, 20, 20);
+    display: inline; /* Distancia entre botones */
+}
+
+.redes a {
+    color: #222222;
+    text-decoration: none;
+    background-color: #cad8ce;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+.redes a:hover {
+    background-color: #222222;
+    color:#cad8ce;
+    border: 1px solid #cad8ce;
+}
+
+.redes a:active {
+    background: rgb(20, 20, 20);
+    color:#f6f4f0;
+}
+
+.frase p {
+    font-family: "Piazzolla";
+    font-weight: 100;
+    font-style: italic;
+    font-size: 11pt;
+    max-width: 500px;
+    min-width: 100px;
+    background: #222222;
+    padding: 15px 30px;
+    border: 1px solid  #cad8ce;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.materia p {
+    margin: 20px;
+    text-align: center;
+    font-size: 10px;
+}
+
 
 /* INDEX/HOME */
 
@@ -94,28 +217,6 @@ nav ul li {
     justify-content: center;
     align-items: center;
 }
-
-h1 {
-    font-family: "Piazzolla";
-    font-weight: 100;
-    font-style: italic;
-    font-size: 200pt;
-    color: #f6f4f0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-h2 {
-    font-family: "Piazzolla";
-    font-weight: 100;
-    font-style: italic;
-    font-size: 25pt;
-    color: #f6f4f0;
-    text-align: center;
-}
-
-
 
 /* Atributos de 'presentacion'*/
 
@@ -161,26 +262,8 @@ h2 {
     justify-content: center;
 }
 
-/* Atributos generales de 'secciones'*/
-h3 { /* titulares de secciones */
-    font-family: "migra";
-    font-size: 30px;
-    color:  #cad8ce;
 
-}
-
-h4 {
-    color: #f6f4f0;
-    font-size: medium;
-}
-
-p {
-    color: #f6f4f0;
-    font-size: small;
-}
-
-
-/* Atributos de 'portfolio' */
+/* Atributos de 'portfolio' VIEJO 
 
 .portfolio {
     display: flex;
@@ -204,7 +287,7 @@ p {
     display: flex;
 }
 
-.box { /* caja con imagen de proyecto */
+.box { 
     height: 420px;
     padding: 2%;
     width: 300px;
@@ -222,84 +305,110 @@ p {
     margin-top: 15px;
     width: 80%px;
 }
+*/
 
 
-/* FOOTER '*/
-footer {
-    height: 300px;
+/*CONTACTO*/
+main {
     display: flex;
-    justify-content: center;
-    margin-top: 100px;
-}
-
-footer div {
-    display: flex;
-    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.contenedor-frase-redes {
-    max-width: 1000px;
+.formulario { /*recuadro contenedor blanco*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 900px;
+    height: fit-content;
+    width: 55%;
     min-width: 600px;
-    padding: 30px;
-    height: 200px;
-    background-color: #222222;
-    border: 1px solid #cad8ce;
-    border-radius: 120px;
+    border-radius: 50px;
+    background-color: #f6f4f0;
+    margin: 60px 0px;
+    padding: 40px;
+    gap: 50px
+    }
+
+.formulario h2 {
+    width: 300px;
+
+}
+
+form {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.redes ul {
-    width: 70%;
+label {
+    font-size: 14px;
+}
+
+input {
+    font-family: "Fira Code", monospace;
+}
+
+
+/*Estilo datos de persona*/
+.datos-persona { 
     display: flex;
     justify-content: center;
-    gap: 15%;
+    gap: 50px;
 }
 
-.redes li {
-    color:  rgb(20, 20, 20);
-    display: inline; /* Distancia entre botones */
+.nombre, .mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
 }
 
-.redes a {
-    color: #222222;
-    text-decoration: none;
-    background-color: #cad8ce;
-    border-radius: 100px;
+input[type="text"], input[type="email"] {
+    width: 100%;
+    border-radius: 50px;
+    outline: none;
+    background-color: #f6f4f0;
+    border: 1px solid #666666;
+    padding: 12px;
+    text-align: center;
+}
+
+/*Estilo mensaje*/
+.mensaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea {
+    height: 200px;
+    width: 100%;
+    border-radius: 25px;
+    outline: none;
+    background-color: #f6f4f0;
+    border: 1px solid #666666;
+    padding: 20px;
+    resize: none;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+}
+
+.boton-enviar {
+    width: 20%;
+    border-radius: 30px;
+    border: none;
+    color: #f6f4f0;
+    background-color: #798a89;
     padding: 10px;
 }
 
-.redes a:hover {
-    background-color: #222222;
-    color:#cad8ce;
-    border: 1px solid #cad8ce;
-}
-
-.redes a:active {
-    background: rgb(20, 20, 20);
-    color:#f6f4f0;
-}
-
-.frase p {
-    font-family: Piazzolla;
-    font-weight: 100;
-    font-style: italic;
-    font-size: 11pt;
-    max-width: 500px;
-    min-width: 100px;
-    background: #222222;
-    padding: 15px 30px;
-    border: 1px solid  #cad8ce;
-    border-radius: 40px;
-    text-align: center;
-}
-
-.materia p {
-    margin: 20px;
-    text-align: center;
-    font-size: 10px;
+.boton-enviar:hover {
+    cursor:pointer;
 }
