@@ -7,14 +7,17 @@
     box-sizing: border-box;
 
 }
+/*atributos para todos los HTML---------------------*/
 body {
     font-family: "Fira Code", monospace;
     background-color:#222222;
 }
 
-
-img {
-    border-radius: 40px;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
@@ -35,7 +38,6 @@ h2{
     font-size: 50px;
     font-style: italic;
     font-weight: 300;
-    line-height: 93.72%; /* 187.44px */
 }
 
 h3 {
@@ -47,7 +49,6 @@ h3 {
     text-align: center;
 }
 
-/*Caracteristicas generales de todos los botones*/
 .boton a {
     width: fit-content;
     padding: 10px 20px;
@@ -58,8 +59,11 @@ h3 {
     padding: 10px 20px;
 }
 
+img {
+    border-radius: 15%;
+}
 
-/* HEADER */
+/* HEADER ---------------------------------------*/
 header {
     display: flex;
     justify-content: center;
@@ -125,7 +129,7 @@ p {
 }
 
 
-/* FOOTER '*/
+/* FOOTER------------------------------------*/
 footer {
     height: 300px;
     display: flex;
@@ -208,7 +212,7 @@ footer {
 }
 
 
-/* INDEX/HOME */
+/* INDEX/HOME----------------------------------*/
 
 /* Atributos de 'portada' */
 .portada {
@@ -263,59 +267,45 @@ footer {
 }
 
 
-/* Atributos de 'portfolio' VIEJO 
-
+/*PORTFOLIO--------------------------------*/
 .portfolio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.caja {
-    width: 80%;
-    border: 1px solid  #cad8ce;
-    border-radius: 40px;
-    margin-top: 100px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-
-}
-
-.cards {
-    display: flex;
-}
-
-.box { 
-    height: 420px;
-    padding: 2%;
-    width: 300px;
-}
-
-.portfolio h3 {
-    margin-left: 20px;
-}
-
-.portfolio h4 {
-    margin-top: 20px;
-}
-
-.portfolio p {
-    margin-top: 15px;
-    width: 80%px;
-}
-*/
-
-
-/*CONTACTO*/
-main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 60px;
 }
 
+.portfolio h1 {
+    font-size: 100px;
+}
+
+.caja {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f4f0;
+    border-radius: 20px;
+    padding: 25px;
+    gap: 30px;
+}
+
+.portfolio img {
+border-radius: 20px;
+}
+
+.portfolio article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    min-width: 650px;
+    gap: 40px
+}
+
+/*CONTACTO---------------------------------*/
 .formulario { /*recuadro contenedor blanco*/
     display: flex;
     flex-direction: column;
@@ -327,16 +317,16 @@ main {
     min-width: 600px;
     border-radius: 50px;
     background-color: #f6f4f0;
-    margin: 60px 0px;
-    padding: 40px;
-    gap: 50px
+    margin-top: 40px;
+    padding: 30px;
+    gap: 40px
     }
 
 .formulario h2 {
     width: 300px;
-
 }
 
+/*Formulario*/
 form {
     display: flex;
     flex-direction: column;
@@ -350,7 +340,6 @@ label {
 input {
     font-family: "Fira Code", monospace;
 }
-
 
 /*Estilo datos de persona*/
 .datos-persona { 
@@ -385,16 +374,17 @@ input[type="text"], input[type="email"] {
 }
 
 textarea {
-    height: 200px;
+    height: 150px;
     width: 100%;
     border-radius: 25px;
     outline: none;
     background-color: #f6f4f0;
     border: 1px solid #666666;
     padding: 20px;
-    resize: none;
+    resize: vertical;
 }
 
+/*Boton enviar*/
 .botones {
     display: flex;
     flex-direction: row;
