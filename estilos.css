@@ -510,6 +510,20 @@ textarea {
     cursor:pointer;
 }
 
-@media  screen and (max-width:600px)(min-width:250px){
-    
+
+/*MEDIA----------------------------------------------------------*/
+@media  screen and (max-width:600px){
+    /* Atributos de 'presentacion'*/
+    h1 {
+    font-size: 150px;
+    height: fit-content;
+    }
+
+    .presentacion article {
+        flex-direction: column;
+    }
+    .sobre-mi {
+        height: fit-content;
+        min-width: 300px;
+    }
 }
